@@ -1,13 +1,82 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Все комментарии - напоминалки и точки опоры для самой себя-->
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <title>Научиться учиться</title>
 </head>
+<!--ОСНОВНОЕ СОДЕРЖАНИЕ-->
 <body>
-  <div class="page">
-
+  <div class="page"> 
+<!--Блок с шапкой-->
+<header class="header">
+  <img class="logo logo_place_header" src="./images/logo_place_header.svg" alt="Логотип Яндекс Практикум">
+  <h1 class="header__title">Научиться учиться</h1>
+  <p class="header__subtitle">Какие современные и эффективные подходы 
+    к обучению вы можете использовать в своей
+    жизни? <span style="cursor:progress"><a href="#" class="header__link" target="_blank">Узнать &rarr;</a></span></p>
+<!--картинки-->
+<img class="header__main-illustration" src="./images/header-image.png" alt="Опять двойка, 1952.">
+<div class="header__square-pic"></div>
+</header>
+  
+<!--Секция описания-->
+<section class="description">
+  <div class="two-columns">
+    <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
+  </div> 
+  <div class="two-columns__main-text">
+    <p class="two-columns__paragraph">Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. 
+      Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, 
+      но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.</p>
+    <p class="two-columns__paragraph"><span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где учат. 
+      Что с этим делать?</p>
+    <p class="two-columns__paragraph">Конкретные техники и упражнения помогают изменить подход к обучению, сделать 
+      его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>  
   </div>
+</section>  
+
+<!--Секция цифры-->
+
+<!--Секция Фейнмана-->
+<section class="feynman">
+  <h2 class="feynman__title">Метод Фейнмана</h2>
+  <p class="feynman__subtitle">Выучить и не забыть.</p>
+  <span style="cursor:progress"><a href="https://lifehacker.ru/metod-fejnmana/" target="_blank" class="feynman__link">Подробнее &rarr;</a></span>
+</section>
+
+<!--Секция принципов-->
+
+<!--БЛОК ПОДВАЛА-->
+<footer class="footer">
+    <div class="footer__columns"> 
+<div class="footer__column footer__column_content_copyright">
+  <img class="logo logo_place_footer" src="./images/logo_place_footer.svg" alt="Логотип Яндекс Практикум">
+  <p class="footer__author">&copy; Виктор Абанькин</p>
+</div>
+<div class="footer__column footer__column_content_info">
+  <h3 class="footer__column-heading">О Практикуме</h3>
+  <nav> <!--первый блок со ссылками-->
+    <ul class="footer__column-links">
+      <li class="footer__list_option"><a href="https://practicum.yandex.ru/" class="footer__column-link">Главная</a></li>
+      <li class="footer__list_option"><a href="https://practicum.yandex.ru/how-we-learn/" class="footer__column-link">Концепция</a></li>
+      <li class="footer__list_option"><a href="https://practicum.yandex.ru/job" class="footer__column-link">Наставники</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="footer__column footer__column_content_social">
+  <h3 class="footer__column-heading">Соцсети</h3>
+    <ul class="footer__column-links">
+      <li class="footer__list_option"><a href="https://www.youtube.com/c/%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC" class="footer__column-link" target="_blank">
+        <img src="./images/YouTube-icon.svg" class="footer__social-icon" alt="YouTube"> YouTube</a></li>
+      <li class="footer__list_option"><a href="https://vk.com/yandex.practicum" class="footer__column-link"><img src="./images/vk_color_white.svg" class="footer__social-icon" alt="ВКонтакте" target="_blank"> ВКонтакте</a></li>
+      <li class="footer__list_option"><a href="https://www.tiktok.com/ru-RU/" class="footer__column-link"><img src="./images/tiktok-icon.svg" class="footer__social-icon" alt="TikTok" target="_blank"> TikTok</a></li>
+    </ul>
+</div>
+    </div> 
+</footer>
+  </div> <!-- конец page-->
 </body>
 </html>
