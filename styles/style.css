@@ -58,7 +58,7 @@
 
 .header__link:hover {
   opacity: 0.6;
-  color: hotpink; /* полетели настройки ссылок, проверка */
+  color: hotpink; /* почему бы и нет (✿ ꈍ‿ꈍ) */
 }
 
 .header__main-illustration {
@@ -80,7 +80,6 @@
   right: 0;
 }
 
-
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
@@ -101,16 +100,16 @@
   display: flex;
   justify-content: space-between;
   padding-top: 100px;
-  padding-bottom: 100px;
+  /*padding-bottom: 100px;*/
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 .two-columns {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 80%;
-
+  margin: 0 auto;
 }
 
 .two-columns__brief {
@@ -125,7 +124,6 @@
 .two-columns__main-text {
   min-width: 784px;
   width: 80%;
-  align-self: center;
   margin: 0;
 }
 
@@ -134,19 +132,78 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin: 30px 0 0;
+}
+
+.two-columns__paragraph:first-of-type {
   margin-top: 0;
-  margin-bottom: 30px;
 }
 
 .two-columns__span-accent {
-  line-height: 34px;
-  font-size: 24px;
   font-weight: 600;
-  margin-bottom: 30px;
 }
 
+/* ЦИФРЫ _И_ФАКТЫ */
+
+.digits {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.section-title {
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+.section-subtitle {
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:flex-start;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 20px 0 0;
+}
 
 /*МЕТОД __ ФЕЙНМАНА*/
+
 .feynman {
   position: relative;
   display: flex;
@@ -195,6 +252,78 @@
   color: hotpink;
 }
 
+/* ПРИНЦИПЫ _ ОБУЧЕНИЯ */
+
+.kaufman {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #1f1f1f;
+  overflow: hidden;
+}
+
+.section-title_theme_dark {
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  color:#f2f2f2;
+  margin: 0;
+  z-index: 1;
+}
+
+.section-subtitle_theme_dark {
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  color:#f2f2f2;
+  padding-top: 20px;
+  margin-top: 0;
+  z-index: 2;
+}
+
+.table_theme_dark {
+  z-index: 3;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  padding: 0;
+  margin-top: 80px;
+}
+
+.table__heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  color:#f2f2f2;
+  margin: 0;
+}
+
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color:#f2f2f2;
+  margin: 20px 0 0;
+}
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  top: 0;
+  right: -210px;
+  position: absolute;
+  background-image: url("../images/kaufman-triangle.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
 /*ФУТЕР*/
 .footer {
   display: flex; 
@@ -203,6 +332,7 @@
   background-color: #1f1f1f;
   color: #f2f2f2;
   padding: 60px 0 40px 0;
+  margin: 0;
 }
 
 .footer__columns {
@@ -234,8 +364,8 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  margin: 0;
-  padding: 18px 0 18px 0;
+  padding: 0;
+  margin: 18px 0 18px 0;
 }
 
 .footer__column-heading {
@@ -247,6 +377,7 @@
 
 .footer__column-links {
   display: flex;
+  display: inline;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
@@ -257,7 +388,7 @@
   list-style-type: none;
   padding: 0;
   margin: 0 0 16px 0;
-  display: inline;
+
 }
 
 .footer__column-link {
