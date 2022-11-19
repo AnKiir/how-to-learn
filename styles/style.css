@@ -35,7 +35,7 @@
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
-  left: 64px; 
+  left: 64px;
   z-index: 2;
 }
 
@@ -65,7 +65,7 @@
   position: absolute;
   width: 765px;
   height: 608px;
-  background-size: cover; 
+  background-size: cover;
   right: 0;
   bottom: 0;
   z-index: 1;
@@ -78,12 +78,6 @@
   background-color: #2f80ed;
   top: 64px;
   right: 0;
-}
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -326,7 +320,7 @@
 
 /*ФУТЕР*/
 .footer {
-  display: flex; 
+  display: flex;
   box-sizing: border-box;
   min-height: 350px;
   background-color: #1f1f1f;
