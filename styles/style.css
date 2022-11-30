@@ -53,7 +53,7 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
-  display: progress;
+  cursor: help;
 }
 
 .header__link:hover {
@@ -116,7 +116,7 @@
 }
 
 .two-columns__paragraph {
-  min-width: 784px;
+  width: 784px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -243,7 +243,7 @@
 .feynman__link:hover {
   opacity: 0.6;
   color: hotpink;
-  display: progress;
+  cursor: help;
 }
 
 /* ПРИНЦИПЫ _ ОБУЧЕНИЯ */
@@ -336,10 +336,6 @@
   margin: 0 0 20px 0;
 }
 
-nav {
-  margin-bottom: 16px;
-}
-
 .footer__column-links {
   display: flex;
   display: inline;
@@ -353,6 +349,7 @@ nav {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 16px;
 }
 
 .footer__column-link {
@@ -364,12 +361,13 @@ nav {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  
 }
 
 .footer__column-link:hover {
   opacity: 0.6;
   color: hotpink;
-  display: progress;
+  cursor: help;
 }
 
 .footer__social-icon {
