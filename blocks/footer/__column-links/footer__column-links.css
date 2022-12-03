@@ -1,0 +1,15 @@
+.footer__column-links {
+    display: flex;
+    display: inline;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 0;
+    color: #f2f2f2;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+  }

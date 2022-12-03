@@ -1,0 +1,10 @@
+.header__link {
+    color: #2f80ed;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .header__link:hover {
+    opacity: 0.6;
+    color: hotpink; /* почему бы и нет (✿ ꈍ‿ꈍ) */
+  }
