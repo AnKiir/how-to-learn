@@ -1,6 +1,10 @@
+@import url(../vendor/normalize.css);
+@import url(../blocks/page/page.css);
 @import url(../blocks/header/header.css);
+@import url(../blocks/logo/logo.css);
 @import url(../blocks/description/description.css);
-@import url();
+@import url(../blocks/two-columns/two-columns.css);
+@import url(../blocks/table/table.css);
 @import url();
 @import url(../blocks/feynman/feynman.css);
 @import url(../blocks/digits/digits.css);
@@ -9,267 +13,41 @@
 @import url(../blocks/resources/resources.css);
 @import url(../blocks/footer/footer.css);
 
+@import url(../blocks/logo/_place/logo_place_header.css);
 @import url(../blocks/header/__title/header__title.css);
 @import url(../blocks/header/__subtitle/header__subtitle.css);
 @import url(../blocks/header/__link/header__link.css);
 @import url(../blocks/header/__main-illustrartion/header__main-illustration.css);
 @import url(../blocks/header/__square-pic/header__square-pic.css);
 
-@import url();
-@import url();
-@import url();
-@import url();
-@import url();
-@import url();
-@import url();
+@import url(../blocks/two-columns/__brief/two-columns__brief.css);
+@import url(../blocks/two-columns/__main-text/two-columns__main-text.css);
+@import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
+@import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
+
+@import url(../blocks/feynman/__title/feynman__title.css);
+@import url(../blocks/feynman/__subtitle/feynman_subtitle.css);
+@import url(../blocks/feynman/__link/feynman__link.css);
+
+@import url(../blocks/section-title/section-title.css);
+@import url(../blocks/section-subtitle/section-subtitle.css);
 
 @import url();
 @import url();
-@import url();
-@import url();
-@import url();
-@import url();
-@import url();
 
-@import url();
-@import url();
-@import url();
-@import url();
-@import url();
-@import url();
-@import url();
+@import url(../blocks/table/__cell/table__cell.css);
+@import url(../blocks/table/__heading/table__heading.css);
+@import url(../blocks/table/__text/table__text.css);
+@import url(../blocks/table/_theme_dark/table_theme_dark.css);
+@import url(../blocks/table/_theme_dark/table__cell_theme_dark.css);
 
+@import url(../blocks/kaufman/__triangle/kaufman__triangle.css);
 
 @import url(../blocks/footer/__columns/footer__columns.css);
 @import url(../blocks/footer/__column/footer__column.css);
+@import url(../blocks/logo/_place/logo_place_footer.css);
 @import url(../blocks/footer/__author/footer__author.css);
 @import url(../blocks/footer/__column-heading/footer__column-heading.css);
 @import url(../blocks/footer/__column-links/footer__column-links.css);
 @import url(../blocks/footer/__column-link/footer__column-link.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);
-
-
-.page {
-  min-width: 1100px;
-  max-width: 1600px;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
-}
-
-.logo_place_header {
-  position: absolute;
-  width: 228px;
-  height: 32px;
-  top: 30px;
-  left: 64px;
-}
-
-/* ГЛАВНЫЕ ПРОБЛЕМЫ В ОБУЧЕНИИ */
-
-.description {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-
-}
-
-.two-columns {
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0;
-}
-
-.two-columns__brief {
-  width: 175px;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  color:#2f80ed;
-  margin: 0;
-}
-
-.two-columns__main-text {
-  min-width: 784px;
-  width: 80%;
-  padding: 0;
-  margin: 0;
-}
-
-.two-columns__paragraph {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  list-style-type: none;
-  margin: 30px 0 0;
-  box-sizing: content-box;
-}
-
-.two-columns__paragraph:first-of-type {
-  margin-top: 0;
-}
-
-.two-columns__span-accent {
-  font-weight: 600;
-}
-
-/* ЦИФРЫ _И_ФАКТЫ */
-
-.digits {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.section-title {
-  width: 60%;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
-  text-align: center;
-  margin: 0;
-}
-
-.section-subtitle {
-  width: 60%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
-  padding-top: 20px;
-  margin: 0;
-}
-
-.table {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items:flex-start;
-  flex-wrap: wrap;
-  width: 1100px;
-  padding: 0;
-  margin: 0 auto;
-}
-
-.table__cell {
-  width: 250px;
-  margin-top: 60px;
-  list-style-type: none;
-}
-
-.table__heading {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.table__text {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 20px 0 0;
-}
-
-/*МЕТОД __ ФЕЙНМАНА*/
-
-.feynman {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-height: 890px;
-  background-color: #f2f2f2;
-  background-image: url("../images/feynman.png");
-  background-size: 867px 637px;
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  margin: 0 auto;
-}
-
-.feynman__title {
-  width: 648px;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 120px;
-  font-weight: 600;
-  padding-top: 100px;
-  margin: 0 auto;
-}
-
-.feynman__subtitle {
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  text-align: center;
-  padding-top: 70px;
-  margin: 0;
-}
-
-.feynman__link {
-  position: absolute;
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  color: #2f80ed;
-  text-decoration: none;
-  top: 50%;
-  right: 48px;
-}
-
-.feynman__link:hover {
-  opacity: 0.6;
-  color: hotpink;
-  cursor: pointer;
-}
-
-/* ПРИНЦИПЫ _ ОБУЧЕНИЯ */
-
-.kaufman {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-color: #1f1f1f;
-  color:#f2f2f2;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.table_theme_dark {
-  padding: 0;
-  margin: 0;
-}
-
-.table__cell_theme_dark {
-  width: 200px;
-  padding: 0;
-  margin-top: 80px;
-}
-
-.kaufman__triangle {
-  width: 877px;
-  height: 877px;
-  top: 0;
-  right: -210px;
-  position: absolute;
-  background-image: url("../images/kaufman-triangle.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-/*ФУТЕР*/
-
-.logo_place_footer {
-  width: 228px;
-  height: 32px;
-}
