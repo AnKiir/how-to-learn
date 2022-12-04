@@ -7,4 +7,5 @@
   .header__link:hover {
     opacity: 0.6;
     color: hotpink; /* почему бы и нет (✿ ꈍ‿ꈍ) */
+    transition: opacity 1s linear;
   }
