@@ -1,17 +1,12 @@
 @keyframes rotation {
     from {
-        transform: rotate(-15deg);
-    }
-    to {
-        transform: rotate(345deg);
-    }
-}
-
-@keyframes rotation-triangle {
-    from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
     }
+}
+
+.rotation {
+    animation: rotation 20s backwards linear infinite;
 }

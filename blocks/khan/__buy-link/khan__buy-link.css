@@ -7,8 +7,7 @@
 }
 
 .khan__buy-link:hover {
-        opacity: 0.6;
-        color: hotpink;
-        cursor: pointer;
-        transition: opacity 1s linear;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 1s linear;
 }
